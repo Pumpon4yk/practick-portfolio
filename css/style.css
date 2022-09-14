@@ -608,11 +608,6 @@ button {
     flex-direction: row-reverse;
 }
 
-/* .portfolio-img{
-    margin-right: 44px;
-
-} */
-
 .portfolio-item-group{
     display: flex;
     flex-direction: column;
@@ -660,3 +655,54 @@ button {
     color: var(--color-white);
     background-color: var(--cl-orange);
 }
+
+/* 
+|=========================>
+|  Services
+|=========================>
+*/
+
+.services-group{
+    text-align: center;
+}
+
+.services-titel{
+    margin-bottom: 18px;
+
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44px;
+}
+
+.services-undertitel{
+    margin-bottom: 60px;
+
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.services-list-item{
+    padding: 34px 49px 34px 34px;
+    text-align: left;
+    flex-basis: calc(100% / 2 - 40px);
+
+    border: 2px solid var(--main-color);
+}
+
+.services-list-titel{
+    margin-bottom: 28px;
+
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 1.29;
+    letter-spacing: 0.64px;
+}
+
