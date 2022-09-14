@@ -752,7 +752,7 @@ button {
     border: 2px solid var(--main-color);
     outline: none;
 
-    transition: border-color var(--cl-orange),
+    transition: border-color var(--animation),
     background-color var(--animation);
 }
 
