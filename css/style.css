@@ -42,7 +42,7 @@ body{
     width: 1440px;
     padding-top: 120px;
     margin: 0 auto;
-
+    overflow: hidden;
     background-color: var(--bg-color);
 }
 
@@ -696,12 +696,6 @@ button {
 
 }
 
-.customer-list-item{
-
-    flex-basis: calc(100% / 4 - 32px);
-
-}
-
 .customer-link{
     display: flex;
     align-items: center;
@@ -723,4 +717,102 @@ button {
 
 .customer-icon{
     fill: currentColor;
+}
+
+/* 
+|=========================>
+|  Articles
+|=========================>
+*/
+
+.articles-group{
+    position: relative;
+
+    padding-bottom: 136px;
+}
+
+.articles-group > .group-undertitel{
+    margin-bottom: 95px;
+}
+
+.articles-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.articles-link{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    padding: 0 53px 11px 34px;
+
+    color: currentColor;
+    border: 2px solid var(--main-color);
+    outline: none;
+
+    transition: border-color var(--cl-orange),
+    background-color var(--animation);
+}
+
+.articles-link:hover,
+.articles-link-btn:focus{
+    background-color: var(--bg-cl-white);
+    border-color: var(--cl-orange);
+}
+
+.articles-group-titel{
+    width: 476px;
+}
+
+.articles-data{
+    color: var(--cl-orange);
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.art-slash{
+    margin: 0 14px;
+}
+
+.articles-titel{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+}
+
+.articles-text{
+    width: 457px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.articles-link-btn{
+    position: relative;
+    display: block;
+    padding: 12px 456px 14px;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--bg-cl-second);
+    transition: transform var(--animation),
+    outline var(--animation),
+    color var(--animation);
+}
+
+.articles-link-btn:hover,
+.articles-link-btn:focus{
+    color: var(--cl-orange);
+    transform: scale(1.005);
+    outline: 2px solid var(--cl-orange);
+}
+
+.articles-icon-bg{
+    position: absolute;
+    right: -310px;
+    bottom: 220px;
+    fill: var(--cl-orange);
 }
