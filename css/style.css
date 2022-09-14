@@ -1,0 +1,291 @@
+:root {
+    /* font style */
+    --main-font: 'Bai Jamjuree', sans-serif;
+
+    /* font color */
+    --main-color: rgba(22, 21, 19, 1);
+    --color-white: #ffffff;
+
+    /* color */
+    --cl-orange: #E94D35;
+    --cl-black-icon: #161513;
+    --cl-black-main: rgba(22, 21, 19, 1);
+
+
+    /* bg color */
+    --bg-color: rgba(242, 241, 239, 1);
+    --bg-cl-second: rgba(22, 21, 19, 1);
+    --bg-cl-white: #ffffff;
+
+    /* other */
+    --shadow: 0px 0px 8px 1px;
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+body{
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.78;
+
+    color: var(--main-color);
+    background-color: var(--bg-cl-white);
+
+}
+
+
+
+
+/* style reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+button {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    font-family: var(--main-font);
+    border: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+|=========================>
+|  Header
+|=========================>
+*/
+
+.header{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1280px;
+
+    padding: 27px 80px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo-snowflake{
+    fill: var(--cl-orange);
+}
+
+.logo-moxa{
+    fill: var(--cl-black-icon);
+}
+
+.nav-list{
+    display: flex;
+    gap: 32px;
+}
+
+.menu-link{
+    font-style: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    
+
+    color: currentColor;
+
+    transition: outline var(--animation),
+    color var(--animation);
+}
+
+.menu-link:hover ,
+.menu-link:focus {
+    outline: 1px solid var(--cl-orange);
+    color: var(--cl-orange);
+    
+}
+
+.menu-link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--bg-cl-second);
+}
+
+.btn-header{
+    width: 126px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    border: 1px solid var(--main-color);
+
+    transition: box-shadow var(--animation);
+}
+
+.btn-header:hover,
+.btn-header:focus{
+    box-shadow: var(--shadow) var(--cl-orange);
+    outline: none;
+}
+
+/* 
+|=========================>
+|  Hero
+|=========================>
+*/
+
+.hero{
+    width: 1440px;
+    margin: 0 auto;
+
+    padding-top: 29px;
+
+    background-color: var(--bg-color);
+}
+
+.hero-group{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    width: 1280px;
+    height: 563px;
+    margin: 0 auto;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 102;
+}
+
+.hero-titel{
+    
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56px;
+
+    
+}
+
+.hero-titel-icon{
+
+    fill: var(--cl-orange);
+}
+
+.hero-list{
+    display: flex;
+    margin-bottom: 40px;
+    gap: 16px;
+
+}
+
+.hero-list-item{
+    display: flex;
+    align-items: center;
+
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+}
+
+.hero-icon{
+    display: inline-flex;
+    padding-left: 16px;
+
+    fill: var(--cl-orange);
+}
+
+.hero-btn{
+    display: flex;
+    position: relative;
+}
+
+.btn-hero-first{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13px 33px;
+    width: 179px;
+    height: 50px;
+
+    color: var(--color-white);
+    background-color: var(--bg-cl-second);
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    border: 1px solid var(--main-color);
+
+    transition: transform var(--animation),
+    outline var(--animation);
+    }
+
+.btn-hero-second{
+    position: absolute;
+    left: 179px;
+    width: 144px;
+    height: 50px;
+
+
+    padding: 13px 33px;
+ 
+    font-size: 16px;
+    line-height: 1.5;
+    
+    border: 1px solid var(--main-color);
+
+    transition: transform var(--animation),
+    outline var(--animation);
+}
+
+.btn-hero-first:hover,
+.btn-hero-first:focus{
+    transform: translateX(-2px);
+    outline:2px solid var(--cl-orange);
+}
+
+.btn-hero-second:hover,
+.btn-hero-second:focus{
+    transform: translateX(2px);
+    outline:2px solid var(--cl-orange);
+}
