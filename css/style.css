@@ -46,6 +46,10 @@ body{
     background-color: var(--bg-color);
 }
 
+.group{
+    width: 1060px;
+    margin: 0 auto;
+}
 
 
 
@@ -277,8 +281,6 @@ button {
     left: 179px;
     width: 144px;
     height: 50px;
-
-
     padding: 13px 33px;
  
     font-size: 16px;
@@ -312,7 +314,6 @@ button {
     width: 1467px;
     height: 190px;
     margin: 0 auto;
-    
 }
 
 .strip-group{
@@ -324,7 +325,6 @@ button {
     margin: 0 auto;
 
     overflow: hidden;
-
 
     background-color: var(--bg-color);
 }
@@ -368,11 +368,7 @@ button {
 
 .about-group{
     display: flex;
-    width: 1060px;
     gap: 40px;
-
-    margin: 0 auto;
-
 
     text-shadow: 1px 1px 1px var(--shadow-text);
 }
@@ -380,7 +376,6 @@ button {
 .about-group-first{
     max-width: 408px;
     padding-right: 57px;
-
 }
 
 .about-uppertitel{
@@ -392,11 +387,9 @@ button {
     font-size: 23px;
     line-height: 1.39;
     letter-spacing: 0.48px;
-
 }
 
 .about-titel{
-
     font-weight: 400;
     font-size: 56px;
     line-height: 1.14;
@@ -437,7 +430,6 @@ button {
     letter-spacing: 0.48px;
 }
 
-
 .about-experience-item{
     display: flex;
     flex-direction: column;
@@ -451,5 +443,126 @@ button {
     line-height: 1.33;
 
     text-shadow: 1px 1px 1px var(--shadow-text-orang);
+}
 
+/* 
+|=========================>
+|  Experience
+|=========================>
+*/
+
+.experience-list{
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+
+    font-size: 56px;
+    line-height: 1.14;
+    text-align: center;
+}
+
+.experience-list .experience-item:nth-child(2){
+
+    color: var(--color-white);
+    background-color: var(--bg-cl-second);
+}
+
+.experience-item{
+    width: 100%;
+    padding: 21px 0;
+    border: 2px solid var(--main-color);
+}
+
+.experience-piece{
+    display: inline-block;
+    text-indent: -100%;
+}
+
+.experience-text{
+
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+
+}
+
+/* 
+|=========================>
+|  Awards
+|=========================>
+*/
+
+.awards-group{
+    text-align: center;
+}
+
+.awards-icon{
+    margin-bottom: 22px;
+    fill: var(--cl-orange);
+}
+
+.awards-titel{
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44px;
+}
+
+.awards-under-titel{
+    margin-bottom: 60px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.awards-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.awards-list-item{
+    display: flex;
+    align-items: center;
+
+    padding: 38px 34px;
+
+    border: 2px solid var(--main-color);
+}
+
+.awards-numb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    color: var(--color-white);
+    background-color: var(--cl-orange);
+
+}
+
+.awards-text-first{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 24px;
+
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+}
+
+.awards-text-second-last{
+    margin-left: auto;
+
+    font-size: 16px;
+    line-height: 2;
+}
+
+.awards-text-last{
+    margin-left: 16px;
 }
