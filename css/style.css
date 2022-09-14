@@ -46,6 +46,11 @@ body{
     background-color: var(--bg-color);
 }
 
+.section-icon{
+    margin-bottom: 22px;
+    fill: var(--cl-orange);
+}
+
 .group{
     width: 1060px;
     margin: 0 auto;
@@ -499,11 +504,6 @@ button {
     text-align: center;
 }
 
-.awards-icon{
-    margin-bottom: 22px;
-    fill: var(--cl-orange);
-}
-
 .awards-titel{
     margin-bottom: 9px;
     font-weight: 400;
@@ -565,4 +565,98 @@ button {
 
 .awards-text-last{
     margin-left: 16px;
+}
+
+/* 
+|=========================>
+| Portfolio
+|=========================>
+*/
+
+.portfolio-group {
+    text-align: center;
+}
+
+.portfolio-titel{
+    margin-bottom: 17px;
+
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44px;
+    }
+
+.portfolio-undertitel{
+    margin-bottom: 60px;
+
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.portfolio-list-item:nth-child(-n + 3){
+    margin-bottom: 96px;
+}
+
+.portfolio-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 44px;
+}
+
+.portfolio-list-item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+/* .portfolio-img{
+    margin-right: 44px;
+
+} */
+
+.portfolio-item-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.portfolio-uppertitel{
+    padding: 3px 12px 5px;
+    margin-bottom: 35px;
+
+
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--cl-orange);
+}
+
+.portfolio-list-titel{
+    margin-bottom: 49px;
+
+    text-align: left;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44px;
+}
+
+.portfolio-link{
+    color: currentColor;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1.6;
+
+    border-radius: 4px;
+
+    transition: color var(--animation),
+    background-color var(--animation);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus{
+
+    color: var(--color-white);
+    background-color: var(--cl-orange);
 }
