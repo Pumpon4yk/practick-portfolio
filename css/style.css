@@ -833,6 +833,7 @@ button {
 .footer-section-second{
     background-color: var(--bg-cl-second);
     padding-top: 66px;
+    padding-bottom: 26px;
 }
 
 .footer-group{
