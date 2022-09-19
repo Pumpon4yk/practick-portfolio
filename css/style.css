@@ -666,7 +666,7 @@ button {
 .services-list-item{
     padding: 34px 49px 34px 34px;
     text-align: left;
-    flex-basis: calc(100% / 2 - 40px);
+    flex-basis: calc(100% / 2 - 20px);
 
     border: 2px solid var(--main-color);
 }
